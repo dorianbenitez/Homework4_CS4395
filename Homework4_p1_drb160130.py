@@ -5,7 +5,6 @@
 # Purpose: CS 4395.001 - Homework #4 (Language Models, Program 1)
 #######
 
-import sys
 import re
 from nltk import word_tokenize
 import pickle
@@ -66,4 +65,5 @@ if __name__ == '__main__':
     italian_unigram, italian_bigram = process_lang(italian_raw)
     pickle.dump(italian_unigram, open('italian_unigram', 'wb'))
     pickle.dump(italian_bigram, open('italian_bigram', 'wb'))
+
     print('\nProgram ended')
